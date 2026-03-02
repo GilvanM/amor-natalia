@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+    color: #0c0c0c;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px 60px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 1.15rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* VIDEO THUMB */
+.video-link {
+    text-decoration: none;
+}
+
+.video-thumb {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    aspect-ratio: 16/9;
+    border-radius: 16px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    color: #e75480;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.video-thumb:hover .play-button {
+    transform: scale(1.1);
+}
+
+/* SETA */
+.click-hint {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: float 1.6s ease-in-out infinite;
+    opacity: 0.9;
+}
+
+.arrow {
+    font-size: 2.2rem;
+}
+
+.hint-text {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    opacity: 0.85;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+}
+
+/* BOTÃO DATA */
+.love-button-area {
+    margin-top: 10px;
+}
+
+#revealBtn {
+    background: white;
+    color: #e75480;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+#revealBtn:hover {
+    transform: scale(1.07);
+}
+
+/* CARTA */
+.hidden-message {
+    max-width: 720px;
+    margin: 35px auto 0;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all 0.9s ease;
+}
+
+.hidden-message.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+strong {
+    font-size: 1.25rem;
+}
